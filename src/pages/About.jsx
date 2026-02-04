@@ -68,7 +68,7 @@ export default function About() {
                     alt="React" 
                     className="w-8 h-8 group-hover/card:spin-slow transition-transform animate-[spin_10s_linear_infinite]"
                   />
-                  <h4 className="font-bold text-pop-red text-xl">Dev</h4>
+                  <h4 className="font-bold text-pop-red text-xl">Tech Stack</h4>
                 </div>
                 <p className="text-sm text-slate-500">React, Javascript, Tailwind, Laravel, PHP, Bootstrap</p>
               </div>
