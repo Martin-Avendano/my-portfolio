@@ -1,0 +1,15 @@
+.scroll-float {
+  overflow: visible !important;
+}
+
+.word {
+  /* This ensures the word stays as one unit for wrapping */
+  display: inline-block; 
+  /* This ensures the characters inside can animate outside the word's bounds */
+  overflow: visible; 
+}
+
+.char {
+  display: inline-block;
+  will-change: transform, opacity;
+}

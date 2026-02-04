@@ -1,26 +1,48 @@
-// src/components/sections/Hero.jsx
+import SplitText from "../components/common/SplitText";
 export default function Hero() {
+
+  const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+  };
+
   return (
+    
     <section id="home" className="min-h-screen bg-pop-red flex items-center pt-20 px-6 md:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full">
         
         {/* Left Side: Text Content */}
         <div className="text-white z-10 space-y-6">
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-tight">
-            Hi, I’m Martin
-          </h1>
+        <h1 className="font-black tracking-tighter leading-tight">
+          <SplitText
+            text="Hi i'm Martin!"
+            // CHANGE HERE: Replaced 'text-2xl' with 'text-6xl md:text-8xl'
+            className="text-6xl md:text-8xl font-semibold text-center"
+            delay={50}
+            duration={1.25}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            onLetterAnimationComplete={handleAnimationComplete}
+            showCallback
+          />
+        </h1>
           <p className="text-xl md:text-2xl font-medium opacity-90">
             UI/UX Designer & Front-end Developer
           </p>
           <p className="text-lg max-w-md leading-relaxed opacity-80">
             I craft intuitive interfaces and build dynamic websites to create something amazing.
           </p>
-          
+          <a href="#projects">
           <div className="flex flex-wrap gap-4 pt-4">
             <button className="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-pop-red transition-all">
               View My Work
             </button>
           </div>
+          </a>  
         </div>
 
         {/* Right Side: Image/Avatar with Hover Effect */}
