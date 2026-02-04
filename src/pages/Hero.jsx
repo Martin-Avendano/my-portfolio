@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="text-white z-10 space-y-6">
         <h1 className="font-black tracking-tighter leading-tight">
           <SplitText
-            text="Hi i'm Martin!"
+            text="Hi I'm Martin!"
             // CHANGE HERE: Replaced 'text-2xl' with 'text-6xl md:text-8xl'
             className="text-6xl md:text-8xl font-semibold text-center"
             delay={50}

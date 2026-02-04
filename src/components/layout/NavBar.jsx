@@ -52,9 +52,13 @@ export default function NavBar() {
         <a href="#home" onClick={toggleMenu} className="hover:text-slate-200 transition-all">Home</a>
         <a href="#about" onClick={toggleMenu} className="hover:text-slate-200 transition-all">About</a>
         <a href="#projects" onClick={toggleMenu} className="hover:text-slate-200 transition-all">Projects</a>
-        <button onClick={toggleMenu} className="mt-4 px-8 py-3 border-2 border-white rounded-full text-lg">
+        <a 
+          href="#footer" 
+          onClick={toggleMenu} 
+          className="mt-4 px-8 py-3 border-2 border-white rounded-full text-lg inline-block hover:bg-white hover:text-black transition-colors"
+        >
           Let's Talk
-        </button>
+        </a>
       </div>
     </nav>
   );
