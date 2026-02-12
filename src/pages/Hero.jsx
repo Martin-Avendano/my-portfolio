@@ -1,6 +1,8 @@
 import SplitText from "../components/common/SplitText";
 export default function Hero() {
 
+
+
   const handleAnimationComplete = () => {
   console.log('All letters have animated!');
   };
